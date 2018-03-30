@@ -20,8 +20,7 @@ public class Mail {
     public static void sendEmail(final String asunto, final String contenido, final String destinatario) {
 
         final Properties props = new Properties();
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");
+
         props.put("mail.smtp.host", "localhost");
         props.put("mail.smtp.port", "25");
         final Session session = Session.getDefaultInstance(props);
